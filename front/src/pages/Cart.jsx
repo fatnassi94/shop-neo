@@ -10,7 +10,7 @@ const Cart = () => {
       return {...product, productQty: cartItems[product._id]};
     });
     setProductCart(productsInCart);
-  })
+  }, []);
   
   
   return (
